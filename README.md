@@ -30,7 +30,12 @@ Opening `index.html` straight from disk won't work, because browsers block ES mo
 
 ## Deploy
 
-Push to GitHub Pages, Netlify or Vercel as a plain static site. No configuration is needed.
+Every push to `main` runs the tests and deploys to GitHub Pages
+(`.github/workflows/pages.yml`) at https://contrasam.github.io/chachacha/.
+
+One-time setup: in the repo go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
+
+It's a plain static site, so Netlify or Vercel work too, with no configuration.
 
 ## Project layout
 
